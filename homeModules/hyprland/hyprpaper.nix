@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, user, ... }:
 
 {
   options.hyprland.hyprpaper = lib.mkEnableOption "hyprpaper";
@@ -7,7 +7,7 @@
     services.hyprpaper = {
       enable = true;
       settings = {
-      "$w" = "~/nix-config/wallpapers";
+      "$w" = "${user.config}/wallpapers";
 
       preload = [
       	"$w/nixos-catppuccin-latte.png"

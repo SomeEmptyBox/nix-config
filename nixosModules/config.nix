@@ -1,4 +1,4 @@
-{ config, lib, pkgs, user, host, ... }:
+{ config, lib, pkgs, user, ... }:
 
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -35,14 +35,14 @@
   };
 
   networking = {
-    hostName = "${host}";
+    hostName = "${user.host}";
     networkmanager.enable = true;
   };
 
   hardware.bluetooth.enable = true;
   time.timeZone = "Asia/Kolkata";
 
-  users.users.${user} = {
+  users.users.${user.name} = {
     isNormalUser = true;
     shell = pkgs.fish;
     extraGroups = [ "NetworkManager" "wheel" "plugdev" ];
@@ -54,7 +54,7 @@
 
   programs.nh = {
     enable = true;
-    flake = "/home/${user}/nix-config";
+    flake = "/home/${user.name}/nix-config";
     clean = {
       enable = true;
       dates = "daily";

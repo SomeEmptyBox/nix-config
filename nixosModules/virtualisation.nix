@@ -15,7 +15,7 @@
     };
 
     virtualisation.spiceUSBRedirection.enable = true;
-    users.users.${user}.extraGroups = [ "libvirtd" ];
+    users.users.${user.name}.extraGroups = [ "libvirtd" ];
     programs.virt-manager.enable = true;
 
     environment.systemPackages = with pkgs; [
@@ -30,7 +30,7 @@
       win-spice
     ];
 
-    home-manager.users.${user}.dconf.settings."org/virt-manager/virt-manager/connections" = {
+    home-manager.users.${user.name}.dconf.settings."org/virt-manager/virt-manager/connections" = {
       autoconnect = [ "qemu:///system" ];
       uris = [ "qemu:///system" ];
     };

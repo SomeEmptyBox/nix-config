@@ -1,7 +1,7 @@
 { config, lib, pkgs, user, ... }:
 
 {
-  programs.firefox.profiles.${user}.search.engines = {
+  programs.firefox.profiles.${user.name}.search.engines = {
 
     "Home Manager" = {
       urls = [{

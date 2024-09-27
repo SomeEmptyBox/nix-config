@@ -1,7 +1,7 @@
 { config, user, ... }:
 
 {
-  programs.firefox.profiles.${user}.settings = {
+  programs.firefox.profiles.${user.name}.settings = {
     #"browser.startup.homepage" = "https://duckduckgo.com";
     "browser.search.region" = "GB";
     "browser.search.isUS" = false;

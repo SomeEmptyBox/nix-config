@@ -38,20 +38,24 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
   let
-    user = "peace";
+  user = {
+    name = "peace";
     host = "nixos";
     system = "x86_64-linux";
+    email = "SomeEmptyBox@proton.me";
+    config = "~/nix-config";
+  };
   in
   {
 
-    nixosConfigurations.${host} = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs user host system;};
+    nixosConfigurations.${user.host} = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs user;};
       modules = [ ./nixosModules/default.nix ];
     };
 
-    #homeConfigurations."${user}@${host}" = home-manager.lib.homeManagerConfiguration {
+    #homeConfigurations."${user.name}@${user.host}" = home-manager.lib.homeManagerConfiguration {
     #  pkgs = nixpkgs.legacyPackages.${system};
-    #  extraSpecialArgs = {inherit inputs user host system;};
+    #  extraSpecialArgs = {inherit inputs user;};
     #  modules = [./homeModules/default.nix];
     #};
 

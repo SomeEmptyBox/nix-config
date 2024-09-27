@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, user, ... }:
 
 {
   options.cliPrograms.fastfetch = lib.mkEnableOption "enables fastfetch";
@@ -16,7 +16,7 @@
 
         logo = {
           #preserveAspectRatio = true;
-          source = "~/nix-config/wallpapers/nixos-logo.png";
+          source = "${user.config}/wallpapers/nixos-logo.png";
           type = "kitty";
           #height = 20;
           width = 20;

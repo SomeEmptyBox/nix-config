@@ -4,8 +4,8 @@
   imports = [./homeModules/default.nix];
 
   home = {
-    username = "${user}";
-    homeDirectory = "/home/${user}";
+    username = "${user.name}";
+    homeDirectory = "/home/${user.name}";
     stateVersion = "24.05";
 
     sessionVariables = {
@@ -14,10 +14,10 @@
   };
 
   programs.git = {
-  	enable = true;
-  	userName = "${user}";
-  	userEmail = "SomeEmptyBox@proton.me";
-  	extraConfig.init.defaultBranch = "main";
+    enable = true;
+    userName = "${user.name}";
+    userEmail = "${user.email}";
+    extraConfig.init.defaultBranch = "main";
   };
 
   xdg.userDirs = {

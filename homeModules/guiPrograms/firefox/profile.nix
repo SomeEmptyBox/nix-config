@@ -1,8 +1,8 @@
 { config, lib, pkgs, user, ... }:
 
 {
-  programs.firefox.profiles.${user} = {
-    name = "${user}";
+  programs.firefox.profiles.${user.name} = {
+    name = "${user.name}";
     id = 0;
     isDefault = true;
     search = {
@@ -12,10 +12,4 @@
       order = [ "DuckDuckGo" ];
     };
   };
-
-  #home.file.".mozilla/firefox/peace/chrome" = {
-  #  source = "~/NixOS/homeModules/guiPrograms/firefox/chrome";
-  #  #target = "~/.mozilla/firefox/peace/chrome";
-  #  recursive = true;
-  #};
 }
