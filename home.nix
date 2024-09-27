@@ -13,9 +13,15 @@
     };
   };
 
+  programs.git = {
+  	enable = true;
+  	userName = "${user}";
+  	userEmail = "SomeEmptyBox@proton.me";
+  	extraConfig.init.defaultBranch = "main";
+  };
+
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
   };
-
 }
