@@ -13,6 +13,8 @@
     };
   };
 
+  defaults.enable = true;
+
   programs.git = {
     enable = true;
     userName = "${user.name}";
