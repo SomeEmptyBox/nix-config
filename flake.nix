@@ -2,7 +2,6 @@
   description = "NixOS Flake Configuration";
 
   inputs = {
-
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     catppuccin.url = "github:catppuccin/nix";
 
@@ -22,18 +21,10 @@
     #  inputs.hyprland.follows = "hyprland";
     #};
 
-    nixos-cosmic = {
-      url = "github:lilyinstarlight/nixos-cosmic";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    stylix.url = "github:danth/stylix";
-
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
