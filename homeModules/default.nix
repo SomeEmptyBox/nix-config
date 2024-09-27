@@ -14,6 +14,7 @@
     cliPrograms = {
       fastfetch = lib.mkDefault true;
       fish = lib.mkDefault true;
+      git = lib.mkDefault true;
       nixvim = lib.mkDefault true;
       micro = lib.mkDefault false;
       starship = lib.mkDefault true;
