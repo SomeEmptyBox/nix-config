@@ -38,16 +38,16 @@
   };
   in
   {
-
+    
     nixosConfigurations.${user.host} = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs user;};
       modules = [ ./nixosModules ];
     };
 
     #homeConfigurations."${user.name}@${user.host}" = home-manager.lib.homeManagerConfiguration {
-    #  pkgs = nixpkgs.legacyPackages.${system};
+    #  pkgs = nixpkgs.legacyPackages.${user.system};
     #  extraSpecialArgs = {inherit inputs user;};
-    #  modules = [./homeModules/default.nix];
+    #  modules = [ ./homeModules ];
     #};
 
   };
