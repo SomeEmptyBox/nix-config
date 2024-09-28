@@ -5,7 +5,7 @@
   	./cliPrograms/default.nix
     ./guiPrograms/default.nix
     ./hyprland/default.nix
-    ./modules/default.nix
+    ./modules
   ];
 
   options.defaults.enable = lib.mkEnableOption "cliPrograms";
