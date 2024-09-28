@@ -81,7 +81,7 @@
         git_status = {
           style = "red";
           up_to_date = "";
-          format = "\\[[$all_status$ahead_behind]($style)\\]";
+          format = "[\\[$all_status$ahead_behind\\]]($style)";
         };
 
         memory_usage = {
