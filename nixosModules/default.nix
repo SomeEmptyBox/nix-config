@@ -1,6 +1,5 @@
 {
   imports = [
-    ./config.nix
     ./catppuccin.nix
     ./hyprland.nix
     ./hardware.nix
