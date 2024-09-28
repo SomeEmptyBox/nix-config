@@ -2,9 +2,9 @@
 
 {
   imports = [
-  	./cliPrograms/default.nix
-    ./guiPrograms/default.nix
-    ./hyprland/default.nix
+  	./cliPrograms
+    ./guiPrograms
+    ./hyprland
     ./modules
   ];
 
@@ -33,7 +33,7 @@
     modules = {
       packages = lib.mkDefault true;
       programs = lib.mkDefault true;
-      theme = lib.mkDefault true;
+      themes = lib.mkDefault true;
     };
 
   };

@@ -1,6 +1,6 @@
 {
   imports = [
-    ./firefox/default.nix
+    ./firefox
     ./kitty.nix
   ];
 }

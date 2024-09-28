@@ -3,8 +3,8 @@
 {
   imports = [inputs.catppuccin.homeManagerModules.catppuccin];
 
-  options.modules.theme = lib.mkEnableOption "catppuccin";
-  config = lib.mkIf config.modules.theme {
+  options.modules.themes = lib.mkEnableOption "catppuccin";
+  config = lib.mkIf config.modules.themes {
 
     catppuccin = {
       enable = true;

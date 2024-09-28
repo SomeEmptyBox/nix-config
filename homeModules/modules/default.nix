@@ -2,6 +2,6 @@
   imports = [
     ./packages.nix
     ./programs.nix
-    ./theme.nix
+    ./themes.nix
   ];
 }
