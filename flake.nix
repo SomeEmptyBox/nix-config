@@ -41,7 +41,7 @@
     
     nixosConfigurations.${user.host} = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs user;};
-      modules = [ ./nixosModules ];
+      modules = [ ./config.nix ];
     };
 
     #homeConfigurations."${user.name}@${user.host}" = home-manager.lib.homeManagerConfiguration {

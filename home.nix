@@ -1,7 +1,7 @@
 { config, lib, pkgs, inputs, user, ... }:
 
 {
-  imports = [./homeModules];
+  imports = [ ./homeModules ];
 
   home = {
     username = "${user.name}";
