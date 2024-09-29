@@ -49,7 +49,7 @@
     decoration = {
       rounding = 10;
       drop_shadow = false;
-      blur.enabled = true;
+      blur.enabled = false;
     };
 
     input.touchpad = {

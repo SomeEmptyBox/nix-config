@@ -33,7 +33,7 @@
     name = "peace";
     host = "nixos";
     system = "x86_64-linux";
-    email = "SomeEmptyBox@proton.me";
+    email = "peace@nixos.noreply.github.com";
     config = "~/nix-config";
   };
   in
