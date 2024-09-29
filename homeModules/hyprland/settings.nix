@@ -36,7 +36,7 @@
       gaps_in = 3;
       gaps_out = 8;
       layout = "dwindle";
-      "col.active_border" = "$red $green $blue $red $green $blue";
+      "col.active_border" = "$red $green $blue";
       "col.inactive_border" = "$crust";
       resize_on_border = true;
     };
@@ -49,7 +49,7 @@
     decoration = {
       rounding = 10;
       drop_shadow = false;
-      blur.enabled = false;
+      blur.enabled = true;
     };
 
     input.touchpad = {

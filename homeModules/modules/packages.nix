@@ -14,7 +14,6 @@
       materialgram
       nautilus
       protonvpn-gui
-      spacedrive
       vscodium
       webcord
     ];
