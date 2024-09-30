@@ -33,7 +33,8 @@
     modules = {
       packages = lib.mkDefault true;
       programs = lib.mkDefault true;
-      themes = lib.mkDefault true;
+      stylix = lib.mkDefault true;
+      themes = lib.mkDefault false;
     };
 
   };
