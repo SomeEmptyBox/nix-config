@@ -33,8 +33,7 @@
     name = "peace";
     host = "nixos";
     system = "x86_64-linux";
-    email = "peace@nixos.noreply.github.com";
-    config = "~/nix-config";
+    assets = "~/nix-config/assets";
   };
   in
   {

@@ -16,7 +16,7 @@
 
         logo = {
           #preserveAspectRatio = true;
-          source = "${user.config}/wallpapers/nixos-logo.png";
+          source = "${user.assets}/nixos-logo.png";
           type = "kitty";
           #height = 20;
           width = 20;

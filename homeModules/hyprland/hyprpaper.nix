@@ -7,15 +7,15 @@
     services.hyprpaper = {
       enable = true;
       settings = {
-      "$w" = "${user.config}/wallpapers";
+      "$wp" = "${user.assets}";
 
       preload = [
-      	"$w/nixos-catppuccin-latte.png"
-      	"$w/nixos-catppuccin-mocha.png"
-      	"$w/quasar-catppuccin-mocha.png"
+      	"$wp/nixos-catppuccin-latte.png"
+      	"$wp/nixos-catppuccin-mocha.png"
+      	"$wp/quasar-catppuccin-mocha.png"
       ];
 
-      wallpaper = [",$w/nixos-catppuccin-mocha.png"];
+      wallpaper = [",$wp/nixos-catppuccin-mocha.png"];
 
       };
     };
