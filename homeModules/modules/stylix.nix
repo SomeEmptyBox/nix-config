@@ -55,5 +55,10 @@
       };
     };
 
+    stylix.targets = {
+      fish.enable = false;
+      kitty.variant256Colors = true;
+    };
+
   };
 }

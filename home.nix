@@ -15,6 +15,8 @@
 
   defaults.enable = true;
 
+  hyprland.hyprpaper = false;
+
   xdg.userDirs = {
     enable = true;
     createDirectories = true;

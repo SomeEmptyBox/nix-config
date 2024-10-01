@@ -32,11 +32,11 @@
     ];
 
     general = {
-      border_size = 5;
+      border_size = 4;
       gaps_in = 3;
       gaps_out = 8;
       layout = "dwindle";
-      "col.active_border" = lib.mkForce "rgb(ffffff)";
+      "col.active_border" = lib.mkForce "rgb(89b4fa)";
       "col.inactive_border" = lib.mkForce "rgb(000000)";
       resize_on_border = true;
     };
