@@ -20,7 +20,7 @@
     };
 
     guiPrograms = {
-      firefox = lib.mkDefault true;
+      librewolf = lib.mkDefault true;
       kitty = lib.mkDefault true;
     };
 

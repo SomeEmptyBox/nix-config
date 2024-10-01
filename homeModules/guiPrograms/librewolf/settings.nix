@@ -2,15 +2,14 @@
 
 {
   programs.firefox.profiles.${user.name}.settings = {
-    #"browser.startup.homepage" = "https://duckduckgo.com";
-    "browser.search.region" = "GB";
-    "browser.search.isUS" = false;
-    "browser.bookmarks.showMobileBookmarks" = true;
-    "distribution.searchplugins.defaultLocale" = "en-GB";
     "extensions.autoDisableScopes" = 0;
-    "extensions.pocket.enabled" = false;
-    "general.useragent.locale" = "en-GB";
-    "identity.fxaccounts.enabled" = false;
+    "privacy.resistFingerprinting" = false;
+    "browser.toolbars.bookmarks.visibility" = "newtab";
+    "privacy.donottrackheader.enabled" = true;
+    "privacy.clearOnShutdown.cookies" = false;
+    "privacy.clearHistory.cookiesAndStorage" = false;
+    "privacy.clearSiteData.cookiesAndStorage" = false;
+
 
     # firefox gnome theme
     "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
