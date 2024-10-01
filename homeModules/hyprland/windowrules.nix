@@ -11,7 +11,7 @@
     "float, class:(.blueman-manager-wrapped)"
     "size 30% 70%, class:(.blueman-manager-wrapped)"
 
-    "fullscreenstate 0 2, class:(firefox)"
+    "fullscreenstate 0 2, class:(librewolf)"
 
     "float, title:(Picture-in-Picture)"
     "size 40% 40%, title:(Picture-in-Picture)"
