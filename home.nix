@@ -15,7 +15,7 @@
 
   defaults.enable = true;
 
-  #hyprland.hyprpaper = false;
+  hyprland.hyprpaper = false;
 
   xdg.userDirs = {
     enable = true;
