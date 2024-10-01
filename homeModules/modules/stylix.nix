@@ -9,7 +9,7 @@
     stylix = {
       enable = true;
       autoEnable = true;
-      image = ../../assets/nixos-catppuccin-mocha.png;
+      image = ../../assets/quasar-catppuccin-mocha.png;
       polarity = "dark";
       base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     };
@@ -56,7 +56,6 @@
     };
 
     stylix.targets = {
-      fish.enable = false;
       kitty.variant256Colors = true;
     };
 

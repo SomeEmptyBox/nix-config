@@ -9,7 +9,7 @@
 
       #font = {
       #  name = "JetBrainsMonoNF-SemiBold";
-      #  size = 12;
+      #  size = 12#;
       #  package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
       #};
 

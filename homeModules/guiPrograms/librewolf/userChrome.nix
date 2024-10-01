@@ -1,4 +1,8 @@
+{ inputs, ... }:
+
 {
+  home.file.".librewolf/peace/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
+
   programs.firefox.profiles.peace = {
 
     userChrome = ''

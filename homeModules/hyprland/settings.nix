@@ -36,8 +36,8 @@
       gaps_in = 3;
       gaps_out = 8;
       layout = "dwindle";
-      "col.active_border" = lib.mkForce "rgb(89b4fa)";
-      "col.inactive_border" = lib.mkForce "rgb(000000)";
+      #"col.active_border" = lib.mkForce "$red $green $blue $yellow";
+      #"col.inactive_border" = lib.mkForce "$crust";
       resize_on_border = true;
     };
 
@@ -49,7 +49,11 @@
     decoration = {
       rounding = 10;
       drop_shadow = false;
-      blur.enabled = false;
+      blur = {
+        enabled = false;
+        size = 4;
+        passes = 2;
+      };
     };
 
     input.touchpad = {

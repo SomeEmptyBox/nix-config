@@ -15,7 +15,7 @@
       	"$wp/quasar-catppuccin-mocha.png"
       ];
 
-      wallpaper = [",$wp/nixos-catppuccin-mocha.png"];
+      wallpaper = [",$wp/quasar-catppuccin-mocha.png"];
 
       };
     };
