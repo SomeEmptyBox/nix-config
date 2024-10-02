@@ -21,4 +21,6 @@
     enable = true;
     createDirectories = true;
   };
+
+  programs.home-manager.enable = true;
 }

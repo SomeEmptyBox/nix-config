@@ -7,7 +7,6 @@
     programs = {
       bat.enable = true;
       btop.enable = true;
-      home-manager.enable = true;
       imv.enable = true;
       obs-studio.enable = true;
       yazi.enable = true;
