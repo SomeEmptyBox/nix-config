@@ -12,6 +12,13 @@
       image = ../../assets/quasar-catppuccin-mocha.png;
       polarity = "dark";
       base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+      override = {
+        "base00" = "11111b";
+        "base01" = "181825";
+        "base02" = "1e1e2e";
+        "base03" = "313244";
+        "base04" = "b4befe";
+      };
     };
 
     stylix.cursor = {
