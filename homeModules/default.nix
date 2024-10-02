@@ -8,10 +8,16 @@
     ./modules
   ];
 
-  options.defaults.enable = lib.mkEnableOption "cliPrograms";
-  config = lib.mkIf config.defaults.enable {
+  options = {
+    guiPrograms.enable = lib.mkEnableOption "guiPrograms";
+    cliPrograms.enable = lib.mkEnableOption "cliPrograms";
+    hyprland.enable = lib.mkEnableOption "hyprland";
+    modules.enable = lib.mkEnableOption "modules";
+  };
+
+  config = {
     
-    cliPrograms = {
+    cliPrograms = lib.mkIf config.cliPrograms.enable {
       fastfetch = lib.mkDefault true;
       fish = lib.mkDefault true;
       git = lib.mkDefault true;
@@ -19,18 +25,18 @@
       starship = lib.mkDefault true;
     };
 
-    guiPrograms = {
+    guiPrograms = lib.mkIf config.guiPrograms.enable {
       librewolf = lib.mkDefault true;
       kitty = lib.mkDefault true;
     };
 
-    hyprland = {
+    hyprland = lib.mkIf config.hyprland.enable {
       dependencies = lib.mkDefault true;
       hyprpaper = lib.mkDefault true;
       settings = lib.mkDefault true;
     };
 
-    modules = {
+    modules = lib.mkIf config.modules.enable {
       packages = lib.mkDefault true;
       programs = lib.mkDefault true;
       stylix = lib.mkDefault true;

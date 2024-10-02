@@ -13,9 +13,10 @@
     };
   };
 
-  defaults.enable = true;
-
-  hyprland.hyprpaper = false;
+  cliPrograms.enable = true;
+  guiPrograms.enable = true;
+  hyprland.enable = true;
+  modules.enable = true;
 
   xdg.userDirs = {
     enable = true;
