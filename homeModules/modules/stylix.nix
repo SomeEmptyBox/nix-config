@@ -18,6 +18,14 @@
         "base02" = "1e1e2e";
         "base03" = "313244";
         "base04" = "b4befe";
+        "base08" = "89b4fa"; #red #blue
+        "base09" = "4b5568";
+        "base0A" = "5e81ac";
+        "base0B" = "94e2d5"; #green #teal
+        "base0C" = "81a1c1";
+        "base0D" = "88c0d0";
+        "base0E" = "cba6f7"; # mauve
+        "base0F" = "c5cad4";
       };
     };
 
