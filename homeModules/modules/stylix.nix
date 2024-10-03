@@ -9,7 +9,7 @@
     stylix = {
       enable = true;
       autoEnable = true;
-      image = ../../assets/quasar-catppuccin-mocha.png;
+      image = ../../assets/hatsune-miku-blue.jpg;
       polarity = "dark";
       base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
       override = {
@@ -17,15 +17,18 @@
         "base01" = "181825";
         "base02" = "1e1e2e";
         "base03" = "313244";
-        "base04" = "b4befe";
-        "base08" = "89b4fa"; #red #blue
-        "base09" = "4b5568";
-        "base0A" = "5e81ac";
-        "base0B" = "94e2d5"; #green #teal
-        "base0C" = "81a1c1";
-        "base0D" = "88c0d0";
-        "base0E" = "cba6f7"; # mauve
-        "base0F" = "c5cad4";
+        "base04" = "b6d1fc";
+        "base05" = "cee0fd";
+        "base06" = "e7f0fe";
+        "base07" = "ffffff"; # text
+        "base08" = "89b4fa"; # options # blue
+        "base09" = "b4befe"; # boolean # greyish
+        "base0A" = "ffffcc"; # traces ? idk # yellow
+        "base0B" = "94e2d5";#"99ffd6"; # string # teal green
+        "base0C" = "94e2d5";#"81a1c1"; # teal
+        "base0D" = "6699ff"; # border # blue
+        "base0E" = "ffb3d9"; # errors # pink
+        "base0F" = "f2cdcd"; # characters
       };
     };
 
