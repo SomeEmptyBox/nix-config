@@ -20,13 +20,13 @@
         base05 = "cee0fd";
         base06 = "e7f0fe";
         base07 = "ffffff"; # text
-        base08 = "89b4fa"; # options
+        base08 = "9999ff";#"ffb3d9"; # options
         base09 = "f2cdcd"; # boolean
         base0A = "ffffcc"; # traces ? idk
-        base0B = "99ffd6"; # string
+        base0B = "99ffbb"; # string
         base0C = "94e2d5";
-        base0D = "89b4fa"; # border
-        base0E = "ffb3d9"; # errors
+        base0D = "74c7ec";#"89b4fa"; # border
+        base0E = "ff99cc"; # errors
         base0F = "f2cdcd"; # characters
       };
     };
