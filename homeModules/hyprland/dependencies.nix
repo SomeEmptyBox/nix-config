@@ -25,11 +25,6 @@
 
     wayland.windowManager.hyprland.systemd.variables = ["--all"];
 
-    programs.rofi = {
-      enable = true;
-      package = pkgs.rofi-wayland;
-    };
-
     xdg.portal = {
       enable = true;
       extraPortals = [ pkgs.xdg-desktop-portal-gtk ];

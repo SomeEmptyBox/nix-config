@@ -9,7 +9,7 @@
 
     "$browser" = "librewolf";
     "$file" = "yazi";
-    "$menu" = "rofi -show drun";
+    "$menu" = "ags -t applauncher";
     "$monitor" = "btop";
     "$terminal" = "kitty";
 
