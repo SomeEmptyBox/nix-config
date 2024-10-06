@@ -198,7 +198,7 @@ function Bar(monitor = 0) {
         name: `bar-${monitor}`, // name has to be unique
         class_name: "bar",
         monitor,
-        anchor: ["top", "left", "right"],
+        anchor: [ "left", "top", "bottom" ],//["top", "left", "right"],
         exclusivity: "exclusive",
         child: Widget.CenterBox({
             start_widget: Left(),
@@ -208,7 +208,7 @@ function Bar(monitor = 0) {
     })
 }
 
-Utils.timeout(100, () => Utils.notify({
+/* Utils.timeout(100, () => Utils.notify({
     summary: "Notification Popup Example",
     iconName: "info-symbolic",
     body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing "
@@ -217,11 +217,12 @@ Utils.timeout(100, () => Utils.notify({
         "Cool": () => print("pressed Cool"),
     },
 }))
+*/
 
 App.config({
   style: App.configDir + "/style.css",
   windows: [
-    Bar(),
+    //Bar(),
     applauncher,
     NotificationPopups(),
   ],
