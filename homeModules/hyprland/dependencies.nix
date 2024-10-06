@@ -17,7 +17,7 @@
     services = {
       blueman-applet.enable = true;
       #cliphist.enable = true;
-      dunst.enable = true;
+      #dunst.enable = true;
       gnome-keyring.enable = true;
       network-manager-applet.enable = true;
       udiskie.enable = true;
