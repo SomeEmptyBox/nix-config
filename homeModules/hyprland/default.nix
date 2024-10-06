@@ -1,6 +1,7 @@
 {
   imports = [
     #inputs.hyprland.homeManagerModules.default
+    ./ags.nix
     ./animations.nix
     ./dependencies.nix
     ./hyprpaper.nix

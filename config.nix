@@ -39,6 +39,7 @@
   networking = {
     hostName = "${user.host}";
     networkmanager.enable = true;
+    firewall.enable = false;
   };
 
   hardware.bluetooth.enable = true;
