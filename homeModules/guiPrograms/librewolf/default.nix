@@ -15,8 +15,8 @@
 
     programs.firefox = {
       enable = true;
-      #package = pkgs.librewolf;
-      #configPath = ".librewolf";
+      package = pkgs.librewolf;
+      configPath = ".librewolf";
     };
 
   };

@@ -16,8 +16,8 @@
         base00 = "181825";
         base01 = "1e1e2e";
         base04 = "b6d1fc";
-        base08 = "cba6f7";
-        base0E = "f38ba8";
+      #  base08 = "cba6f7";
+      #  base0E = "f38ba8";
       };
 
       #base16Scheme = {

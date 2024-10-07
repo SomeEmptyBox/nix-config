@@ -14,6 +14,7 @@
       materialgram
       nautilus
       protonvpn-gui
+      tg
       vscodium
       webcord
     ];
