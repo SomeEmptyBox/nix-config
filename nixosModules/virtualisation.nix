@@ -1,4 +1,4 @@
-{config, lib, pkgs, user, ... }:
+{ config, lib, pkgs, user, ... }:
 
 {
   options.virtual.enable = lib.mkEnableOption "enables virtualisation";

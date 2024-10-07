@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./bookmarks.nix
     ./extensions.nix
     ./profile.nix
     ./searchEngines.nix
@@ -14,8 +15,8 @@
 
     programs.firefox = {
       enable = true;
-      package = pkgs.librewolf;
-      configPath = ".librewolf";
+      #package = pkgs.librewolf;
+      #configPath = ".librewolf";
     };
 
   };
