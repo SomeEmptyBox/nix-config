@@ -1,6 +1,6 @@
 {
   imports = [
-    ./librewolf
+    ./firefox
     ./kitty.nix
   ];
 }

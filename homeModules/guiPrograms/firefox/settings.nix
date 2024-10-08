@@ -3,12 +3,7 @@
 {
   programs.firefox.profiles.${user.name}.settings = {
     "extensions.autoDisableScopes" = 0;
-    "privacy.resistFingerprinting" = false;
     "browser.toolbars.bookmarks.visibility" = "newtab";
-    "privacy.donottrackheader.enabled" = true;
-    "privacy.clearOnShutdown.cookies" = false;
-    "privacy.clearHistory.cookiesAndStorage" = false;
-    "privacy.clearSiteData.cookiesAndStorage" = false;
 
 
     # firefox gnome theme

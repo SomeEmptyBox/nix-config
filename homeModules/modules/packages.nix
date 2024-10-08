@@ -16,6 +16,7 @@
       protonvpn-gui
       tg
       vscodium
+      waybar
       webcord
     ];
 
