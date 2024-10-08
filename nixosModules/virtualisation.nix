@@ -26,7 +26,7 @@
       usbutils
       virt-manager
       virt-viewer
-      virtio-win
+#      virtio-win
       win-spice
     ];
 

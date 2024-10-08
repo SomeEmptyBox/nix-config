@@ -7,7 +7,7 @@
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
 
-    "$browser" = "librewolf";
+    "$browser" = "firefox";
     "$file" = "yazi";
     "$menu" = "ags -t applauncher";
     "$monitor" = "btop";

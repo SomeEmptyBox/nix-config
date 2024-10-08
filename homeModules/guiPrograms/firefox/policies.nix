@@ -25,7 +25,7 @@
       OverrideFirstRunPage = "";
       OverridePostUpdatePage = "";
       DontCheckDefaultBrowser = true;
-      DisplayMenuBar = "default-off"; # alternatives: "always", "never" or "default-on"
+      DisplayMenuBar = "never"; # alternatives: "always", "never" or "default-on"
       SearchBar = "unified";
       PasswordManagerEnabled = false;
     };
