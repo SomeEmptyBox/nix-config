@@ -15,7 +15,10 @@
 
     monitor = ", 1920x1080, 0x0, 1.0";
 
-    exec-once = ["clipse -listen"];
+    exec-once = [
+      "ags"
+      "clipse -listen"
+    ];
 
     env = [     
       "GDK_BACKEND,wayland"
