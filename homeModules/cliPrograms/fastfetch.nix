@@ -15,7 +15,7 @@
         };
 
         logo = {
-          #preserveAspectRatio = true;
+          preserveAspectRatio = true;
           source = "${user.assets}/nixos-logo.png";
           type = "kitty";
           #height = 20;
@@ -24,13 +24,49 @@
 
         modules = [
           "break" "break"
-          { key = " "; type = "os"; keyColor = "blue"; format = "{3}"; }
-          { key = "󰌽 "; type = "kernel"; keyColor = "yellow"; }
-          { key = "󰅐 "; type = "uptime"; keyColor = "green"; }
-          { key = " "; type = "memory"; }
-          { key = " "; type = "packages"; keyColor = "red"; }
-          { key = " "; type = "wm"; keyColor = "cyan"; }
-          { key = " "; type = "colors"; keyColor = "magenta"; symbol = "circle"; }
+          
+          {
+            key = " ";
+            type = "os";
+            keyColor = "blue";
+            format = "{3}";
+          }
+
+          {
+            key = "󰌽 ";
+            type = "kernel";
+            keyColor = "yellow";
+          }
+          
+          {
+            key = "󰅐 ";
+            type = "uptime";
+            keyColor = "green";
+          }
+
+          {
+            key = " ";
+            type = "memory";
+          }
+
+          {
+            key = " ";
+            type = "packages";
+            keyColor = "red";
+          }
+
+          {
+            key = " ";
+            type = "wm";
+            keyColor = "cyan";
+          }
+
+          {
+            key = " ";
+            type = "colors";
+            keyColor = "magenta";
+            symbol = "circle";
+          }
         ];
 
       };
