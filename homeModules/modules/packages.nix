@@ -9,6 +9,7 @@
       celluloid
       cmatrix
       fragments
+      gitui
       komikku
       libreoffice-fresh
       materialgram
