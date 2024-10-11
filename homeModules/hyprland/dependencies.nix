@@ -6,26 +6,24 @@
 
     home.packages = with pkgs; [
       brightnessctl
+      blueman
       clipse
+      gnome-keyring
       hyprshot
+      networkmanagerapplet
       playerctl
       wl-clipboard
       kdePackages.qt6ct
       kdePackages.qtwayland
+      udiskie
     ];
 
-    services = {
-      blueman-applet.enable = true;
-      gnome-keyring.enable = true;
-      network-manager-applet.enable = true;
-      udiskie.enable = true;
-    };
-
-    home.sessionVariables = {
-      XDG_CURRENT_DESKTOP = "Hyprland";
-      XDG_SESSION_TYPE = "wayland";
-      XDG_SESSION_DESKTOP = "Hyprland";
-    };
+#    services = {
+#      blueman-applet.enable = true;
+#      gnome-keyring.enable = true;
+#      network-manager-applet.enable = true;
+#      udiskie.enable = true;
+#    };
 
     wayland.windowManager.hyprland.systemd.variables = ["--all"];
 

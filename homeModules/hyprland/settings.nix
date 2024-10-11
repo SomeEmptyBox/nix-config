@@ -17,7 +17,10 @@
 
     exec-once = [
       "ags"
+      "blueman-applet"
       "clipse -listen"
+      "nmapplet"
+      "udiskie"
     ];
 
     env = [     
@@ -29,9 +32,9 @@
       #"QT_QPA_PLATFORMTHEME,qt6ct"
       #"QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
 
-#      "XDG_CURRENT_DESKTOP,Hyprland"
-#      "XDG_SESSION_TYPE,wayland"
-#      "XDG_SESSION_DESKTOP,Hyprland"
+      "XDG_CURRENT_DESKTOP,Hyprland"
+      "XDG_SESSION_TYPE,wayland"
+      "XDG_SESSION_DESKTOP,Hyprland"
     ];
 
     general = {

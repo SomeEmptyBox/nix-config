@@ -26,12 +26,12 @@ window.notification-popups box.notifications {
     border-radius: 11px;
     padding: 1em;
     margin: .5em;
-    border: 1px solid @wm_borders_edge;
+    border: 4px solid @wm_borders_edge;
     background-color: @theme_bg_color;
 }
 
 .notification.critical {
-    border: 1px solid lightcoral;
+    border: 4px solid lightcoral;
 }
 
 .title {
