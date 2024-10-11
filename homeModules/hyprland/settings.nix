@@ -19,11 +19,12 @@
       "ags"
       "blueman-applet"
       "clipse -listen"
-      "nmapplet"
+      "nm-applet"
       "udiskie"
     ];
 
-    env = [     
+    env = [
+      "NIXOS_OZONE_WL,1"
       "GDK_BACKEND,wayland"
       "SDL_VIDEODRIVER,wayland"
       "CLUTTER_BACKEND,wayland"
