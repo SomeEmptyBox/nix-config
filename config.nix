@@ -51,6 +51,7 @@
     extraGroups = [ "NetworkManager" "wheel" "plugdev" ];
   };
 
+  cosmic.enable = true;
   hyprland.enable = true;
   virtual.enable = true;
   theme.enable = true;
