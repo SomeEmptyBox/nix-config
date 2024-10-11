@@ -1,8 +1,8 @@
 {
   imports = [
     ./catppuccin.nix
-    ./cosmic.nix
-    ./hyprland.nix
+    ./desktopManager
+    ./displayManager
     ./hardware.nix
     ./home-manager.nix
     ./virtualisation.nix

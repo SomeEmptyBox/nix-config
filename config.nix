@@ -51,8 +51,14 @@
     extraGroups = [ "NetworkManager" "wheel" "plugdev" ];
   };
 
-  cosmic.enable = true;
-  hyprland.enable = true;
+  displayManager.sddm.enable = true;
+  
+  desktopManager = {
+    hyprland.enable = true;
+    cosmic.enable = true;
+    cachix.enable = true;
+  };
+
   virtual.enable = true;
   theme.enable = true;
 
