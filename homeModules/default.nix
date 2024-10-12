@@ -35,8 +35,7 @@
 
     hyprland = lib.mkIf config.hyprland.enable {
       ags.enable = lib.mkDefault true;
-      dependencies = lib.mkDefault true;
-      hyprpaper = lib.mkDefault true;
+      default.enable = lib.mkDefault true;
       settings = lib.mkDefault true;
     };
 

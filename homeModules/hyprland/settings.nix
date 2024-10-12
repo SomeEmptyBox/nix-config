@@ -4,7 +4,6 @@
   options.hyprland.settings = lib.mkEnableOption "settings";
   config = lib.mkIf config.hyprland.settings {
   
-  wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
 
     "$browser" = "firefox";
@@ -17,10 +16,7 @@
 
     exec-once = [
       "ags"
-      "blueman-applet"
       "clipse -listen"
-      "nm-applet"
-      "udiskie"
     ];
 
     env = [

@@ -39,7 +39,6 @@
   networking = {
     hostName = "${user.host}";
     networkmanager.enable = true;
-    firewall.enable = false;
   };
 
   hardware.bluetooth.enable = true;
@@ -51,14 +50,7 @@
     extraGroups = [ "NetworkManager" "wheel" "plugdev" ];
   };
 
-  displayManager.sddm.enable = true;
-  
-  desktopManager = {
-    hyprland.enable = true;
-    cosmic.enable = true;
-    cachix.enable = true;
-  };
-
+  hyprland.enable = true;
   virtual.enable = true;
   theme.enable = true;
 

@@ -1,10 +1,9 @@
 {
   imports = [
     ./catppuccin.nix
-    ./desktopManager
-    ./displayManager
     ./hardware.nix
     ./home-manager.nix
+    ./hyprland.nix
     ./virtualisation.nix
   ];
 }

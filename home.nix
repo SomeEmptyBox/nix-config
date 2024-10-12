@@ -11,12 +11,7 @@
 
   cliPrograms.enable = true;
   guiPrograms.enable = true;
-
-  hyprland = {
-    enable = true;
-    hyprpaper = false;
-  };
-
+  hyprland.enable = true;
   modules.enable = true;
 
   xdg.userDirs = {

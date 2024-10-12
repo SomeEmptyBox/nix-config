@@ -4,7 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     catppuccin.url = "github:catppuccin/nix";
-    nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
 
     ags = {
       url = "github:Aylur/ags";
