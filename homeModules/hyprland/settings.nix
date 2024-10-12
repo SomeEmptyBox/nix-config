@@ -17,6 +17,7 @@
     exec-once = [
       "ags"
       "clipse -listen"
+      "~/.local/state/nix/profiles/home-manager/home-path/libexec/polkit-gnome-authentication-agent-1"
     ];
 
     env = [
