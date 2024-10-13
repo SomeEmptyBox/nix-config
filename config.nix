@@ -53,7 +53,7 @@
 
   hyprland.enable = true;
   virtual.enable = true;
-  theme.stylix.enable = true;
+  theme.enable = true;
 
   programs.nh = {
     enable = true;
