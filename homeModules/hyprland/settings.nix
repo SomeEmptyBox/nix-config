@@ -26,6 +26,8 @@
       "SDL_VIDEODRIVER,wayland"
       "CLUTTER_BACKEND,wayland"
 
+      "EDITOR,nvim"
+
       "QT_QPA_PLATFORM,wayland"
       #"QT_QPA_PLATFORMTHEME,qt6ct"
       #"QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
