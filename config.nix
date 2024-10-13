@@ -39,6 +39,7 @@
   networking = {
     hostName = "${user.host}";
     networkmanager.enable = true;
+    wireguard.enable = true;
   };
 
   hardware.bluetooth.enable = true;
@@ -52,7 +53,7 @@
 
   hyprland.enable = true;
   virtual.enable = true;
-  theme.enable = true;
+  theme.stylix.enable = true;
 
   programs.nh = {
     enable = true;
