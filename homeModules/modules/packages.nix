@@ -9,15 +9,11 @@
       celluloid
       cmatrix
       fragments
-      gitui
       komikku
       libreoffice-fresh
       materialgram
       nautilus
       protonvpn-gui
-      tg
-      vscodium
-      waybar
       webcord
     ];
 
