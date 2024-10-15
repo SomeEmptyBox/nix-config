@@ -5,6 +5,7 @@
     inputs.hyprland.homeManagerModules.default
     ./ags.nix
     ./animations.nix
+    ./dependencies
     ./keybinds.nix
     ./settings.nix
     ./windowrules.nix
