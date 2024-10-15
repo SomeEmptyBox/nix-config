@@ -9,15 +9,10 @@
       trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
     };
 
-#    services.displayManager.sddm = {
-#      enable = true;
-#      wayland.enable = true;
-#      package = pkgs.kdePackages.sddm;
-#    };
-
-    services.xserver = {
+    services.displayManager.sddm = {
       enable = true;
-      displayManager.gdm.enable = true;
+      wayland.enable = true;
+      package = pkgs.kdePackages.sddm;
     };
 
     programs.hyprland = {
