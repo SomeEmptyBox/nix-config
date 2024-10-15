@@ -36,6 +36,7 @@
     hyprland = lib.mkIf config.hyprland.enable {
       ags.enable = lib.mkDefault true;
       default.enable = lib.mkDefault true;
+      dependencies.mako.enable = true;
       settings = lib.mkDefault true;
     };
 
