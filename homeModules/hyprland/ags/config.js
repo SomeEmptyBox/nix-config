@@ -1,5 +1,4 @@
 import { applauncher } from "./applauncher.js"
-import { NotificationPopups } from "./notificationPopups.js"
 
 /*
 Utils.timeout(100, () => Utils.notify({
@@ -14,9 +13,7 @@ Utils.timeout(100, () => Utils.notify({
 */
 
 App.config({
-  style: App.configDir + "/style.css",
   windows: [
     applauncher,
-    NotificationPopups(),
   ],
 })
