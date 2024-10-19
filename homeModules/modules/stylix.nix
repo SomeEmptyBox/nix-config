@@ -1,18 +1,32 @@
 { config, lib, pkgs, inputs, user, ... }:
 
 {
-  imports = [ inputs.stylix.homeManagerModules.stylix ];
+  imports = [
+    inputs.stylix.homeManagerModules.stylix
+    inputs.catppuccin.homeManagerModules.catppuccin
+  ];
 
   options.modules.stylix = lib.mkEnableOption "stylix";
   config = lib.mkIf config.modules.stylix {
 
+    catppuccin = {
+      enable = true;
+      accent = "blue";
+      flavor = "mocha";
+      pointerCursor.enable = false;
+    };
+
     stylix = {
       enable = true;
-      autoEnable = true;
-      image = ../../assets/quasar-catppuccin-mocha.png;
+      autoEnable = false;
+      image = ../../assets/nixos-catppuccin-mocha.png;
       polarity = "dark";
       base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-      override.base04 = "b6d1fc";
+      override = {
+        base00 = "11111b";
+        base01 = "181825";
+        base04 = "b6d1fc";
+      };
 
       cursor = {
         name = "Bibata-Modern-Classic";
@@ -42,18 +56,23 @@
       };
 
       targets = {
-        kitty.variant256Colors = true;
+#        kitty.variant256Colors = true;
       };
     };
 
     qt = {
       enable = true;
-      style.name = "adwaita-dark";
-      platformTheme.name = "adwaita";
+      style.name = "kvantum";
+      platformTheme.name = "kvantum";
     };
 
     gtk = {
       enable = true;
+      catppuccin = {
+        enable = true;
+        gnomeShellTheme = true;
+        tweaks = [ "normal" ];
+      };
       iconTheme = {
         name = "Adwaita";
         package = pkgs.adwaita-icon-theme;

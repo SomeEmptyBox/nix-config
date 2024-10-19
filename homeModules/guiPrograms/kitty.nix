@@ -7,11 +7,11 @@
     programs.kitty = {
       enable = true;
 
-      #font = {
-      #  name = "JetBrainsMonoNF-SemiBold";
-      #  size = 12#;
-      #  package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
-      #};
+      font = {
+        name = "JetBrainsMonoNF-SemiBold";
+        size = 12;
+        package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
+      };
 
       settings = {
         window_padding_width = 5;

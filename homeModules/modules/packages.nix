@@ -6,15 +6,16 @@
 
     home.packages = with pkgs; [
       aria2
+      betterdiscord-installer
       celluloid
       cmatrix
+      discord
       fragments
       komikku
       libreoffice-fresh
-      materialgram
       nautilus
       protonvpn-gui
-      webcord
+      telegram-desktop
     ];
 
   };
