@@ -41,8 +41,8 @@
       gaps_in = 3;
       gaps_out = 8;
       layout = "dwindle";
-      #"col.active_border" = lib.mkForce "$red $green $blue $yellow";
-      #"col.inactive_border" = lib.mkForce "$crust";
+      "col.active_border" = "$blue";
+      "col.inactive_border" = "$crust";
       resize_on_border = true;
     };
 
