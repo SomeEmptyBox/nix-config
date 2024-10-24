@@ -8,6 +8,7 @@
       aria2
       betterdiscord-installer
       celluloid
+      chromium
       cmatrix
       discord
       fragments

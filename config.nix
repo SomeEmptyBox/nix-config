@@ -52,6 +52,7 @@
   };
 
   hyprland.enable = true;
+  cosmic.enable = true;
   virtual.enable = true;
   theme.enable = true;
 
