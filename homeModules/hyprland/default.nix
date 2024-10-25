@@ -3,7 +3,6 @@
 {
   imports = [
     inputs.hyprland.homeManagerModules.default
-    ./ags.nix
     ./animations.nix
     ./dependencies
     ./keybinds.nix
@@ -29,6 +28,8 @@
       kdePackages.qt6ct
       kdePackages.qtwayland
     ];
+
+    programs.wofi.enable = true;
 
     services = {
       blueman-applet.enable = true;

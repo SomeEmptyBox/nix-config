@@ -8,10 +8,10 @@
   zramSwap.enable = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  security.polkit = {
-    enable = true;
+#  security.polkit = {
+#    enable = true;
     #package = pkgs.polkit_gnome;
-  };
+#  };
 
   services = {
     blueman.enable = true;
@@ -78,6 +78,7 @@
     fzf
     git
     neovim
+    nixfmt-rfc-style
     p7zip
     python3
     rustc

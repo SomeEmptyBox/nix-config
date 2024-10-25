@@ -6,11 +6,6 @@
     catppuccin.url = "github:catppuccin/nix";
     nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
 
-    ags = {
-      url = "github:Aylur/ags";
-#      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";

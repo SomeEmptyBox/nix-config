@@ -1,4 +1,11 @@
-{ config, lib, pkgs, inputs, user, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  user,
+  ...
+}:
 
 {
   imports = [
@@ -44,7 +51,7 @@
       fonts = {
         monospace = {
           name = "JetBrainsMonoNF-SemiBold";
-          package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
+          package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
         };
 
         sizes = {
@@ -56,15 +63,15 @@
       };
 
       targets = {
-#        kitty.variant256Colors = true;
+        #        kitty.variant256Colors = true;
       };
     };
 
- #   qt = {
- #     enable = true;
- #     style.name = "kvantum";
- #     platformTheme.name = "kvantum";
- #   };
+    #   qt = {
+    #     enable = true;
+    #     style.name = "kvantum";
+    #     platformTheme.name = "kvantum";
+    #   };
 
     gtk = {
       enable = true;

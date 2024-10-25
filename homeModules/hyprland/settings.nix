@@ -8,16 +8,16 @@
 
     "$browser" = "firefox";
     "$file" = "yazi";
-    "$menu" = "ags -t applauncher";
+    "$menu" = "wofi --show drun";
     "$monitor" = "btop";
     "$terminal" = "kitty";
 
     monitor = ", 1920x1080, 0x0, 1.0";
 
     exec-once = [
-      "ags"
       "clipse -listen"
       "~/.local/state/nix/profiles/home-manager/home-path/libexec/polkit-gnome-authentication-agent-1"
+      "exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
     ];
 
     env = [
