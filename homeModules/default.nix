@@ -28,7 +28,6 @@
     guiPrograms = lib.mkIf config.guiPrograms.enable {
       firefox = {
         enable = lib.mkDefault true;
-        policies.enable = lib.mkDefault true;
       };
       kitty = lib.mkDefault true;
     };

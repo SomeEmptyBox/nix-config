@@ -1,7 +1,7 @@
 { inputs, ... }:
 
 {
-  home.file.".mozilla/firefox/peace/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
+  home.file.".librewolf/peace/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
 
   programs.firefox.profiles.peace = {
 
