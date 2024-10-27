@@ -9,6 +9,7 @@
   imports = [
     ./bookmarks.nix
     ./extensions.nix
+    ./policies.nix
     ./searchEngines.nix
     ./settings.nix
     ./userChrome.nix
@@ -19,8 +20,8 @@
 
     programs.firefox = {
       enable = true;
-      package = pkgs.librewolf;
-      configPath = ".librewolf";
+#      package = pkgs.librewolf;
+#      configPath = ".librewolf";
 
       profiles.${config.home.username} = {
         name = "${config.home.username}";

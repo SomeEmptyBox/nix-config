@@ -4,9 +4,9 @@
   programs.firefox.profiles.${user.name}.settings = {
     "extensions.autoDisableScopes" = 0;
     "browser.toolbars.bookmarks.visibility" = "newtab";
-    "privacy.resistFingerprinting" = false;
-    "privacy.clearOnShutdown.cookies" = false;
-    "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
+    # "privacy.resistFingerprinting" = false;
+    # "privacy.clearOnShutdown.cookies" = false;
+    # "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
     "privacy.donottrackheader.enabled" = true;
 
     # firefox gnome theme
