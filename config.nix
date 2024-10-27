@@ -53,7 +53,7 @@
 
   hyprland.enable = true;
   cosmic.enable = true;
-  virtual.enable = true;
+  virtual.enable = false;
   theme.enable = true;
 
   programs.nh = {
