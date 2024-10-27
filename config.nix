@@ -48,7 +48,7 @@
   users.users.${user.name} = {
     isNormalUser = true;
     shell = pkgs.fish;
-    extraGroups = [ "NetworkManager" "wheel" "plugdev" ];
+    extraGroups = [ "NetworkManager" "wheel" "plugdev" "adbusers" ];
   };
 
   hyprland.enable = true;
@@ -66,10 +66,12 @@
     };
   };
 
-  programs.fish.enable = true;
+  programs = {
+    adb.enable = true;
+    fish.enable = true;
+  };
 
   environment.systemPackages = with pkgs; [
-    android-tools
     btop
     bottles
     curl
