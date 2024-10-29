@@ -59,7 +59,23 @@
         specialArgs = {
           inherit inputs user;
         };
-        modules = [ ./config.nix ];
+        modules = [
+          ./config.nix
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              backupFileExtension = "backup";
+              extraSpecialArgs = {
+                inherit inputs user;
+              };
+              users.${user.name} = import ./home.nix;
+            };
+          }
+
+        ];
       };
 
       #homeConfigurations."${user.name}@${user.host}" = home-manager.lib.homeManagerConfiguration {
