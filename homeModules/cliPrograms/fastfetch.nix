@@ -1,4 +1,10 @@
-{ config, lib, pkgs, user, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  user,
+  ...
+}:
 
 {
   options.cliPrograms.fastfetch = lib.mkEnableOption "enables fastfetch";
@@ -23,8 +29,9 @@
         };
 
         modules = [
-          "break" "break"
-          
+          "break"
+          "break"
+
           {
             key = " ";
             type = "os";
@@ -37,7 +44,7 @@
             type = "kernel";
             keyColor = "yellow";
           }
-          
+
           {
             key = "󰅐 ";
             type = "uptime";

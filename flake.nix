@@ -38,27 +38,35 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
-  let
-  user = {
-    name = "peace";
-    host = "nixos";
-    system = "x86_64-linux";
-    assets = "~/nix-config/assets";
-  };
-  in
-  {
-    
-    nixosConfigurations.${user.host} = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs user;};
-      modules = [ ./config.nix ];
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
+    let
+      user = {
+        name = "peace";
+        host = "nixos";
+        system = "x86_64-linux";
+        assets = "~/nix-config/assets";
+      };
+    in
+    {
+
+      nixosConfigurations.${user.host} = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs user;
+        };
+        modules = [ ./config.nix ];
+      };
+
+      #homeConfigurations."${user.name}@${user.host}" = home-manager.lib.homeManagerConfiguration {
+      #  pkgs = nixpkgs.legacyPackages.${user.system};
+      #  extraSpecialArgs = {inherit inputs user;};
+      #  modules = [ ./homeModules ];
+      #};
+
     };
-
-    #homeConfigurations."${user.name}@${user.host}" = home-manager.lib.homeManagerConfiguration {
-    #  pkgs = nixpkgs.legacyPackages.${user.system};
-    #  extraSpecialArgs = {inherit inputs user;};
-    #  modules = [ ./homeModules ];
-    #};
-
-  };
 }

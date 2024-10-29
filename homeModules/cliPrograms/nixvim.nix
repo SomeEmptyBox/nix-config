@@ -1,4 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [ inputs.nixvim.homeManagerModules.nixvim ];
@@ -10,7 +16,7 @@
       enable = true;
       defaultEditor = true;
       colorschemes.catppuccin.enable = true;
-      
+
       clipboard = {
         register = "unnamedplus";
         providers.wl-copy.enable = true;

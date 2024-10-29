@@ -1,7 +1,11 @@
-{ config, pkgs, inputs, user, ... }:
+{
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  programs.firefox.profiles.${user.name}.extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
+  programs.firefox.profiles.default.extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
     proton-pass
     proton-vpn
     ublock-origin

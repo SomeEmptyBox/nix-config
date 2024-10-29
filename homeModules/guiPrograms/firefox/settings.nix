@@ -1,7 +1,5 @@
-{ config, user, ... }:
-
 {
-  programs.firefox.profiles.${user.name}.settings = {
+  programs.firefox.profiles.default.settings = {
     "extensions.autoDisableScopes" = 0;
     "browser.toolbars.bookmarks.visibility" = "newtab";
     # "privacy.resistFingerprinting" = false;
@@ -15,7 +13,7 @@
     "svg.context-properties.content.enabled" = true;
     "browser.theme.dark-private-windows" = false;
     "widget.gtk.rounded-bottom-corners.enabled" = true;
-    "gnomeTheme.hideSingleTab" = true;
+    "gnomeTheme.hideSingleTab" = false;
     "gnomeTheme.bookmarksToolbarUnderTabs" = true;
     "gnomeTheme.dragWindowHeaderbarButtons" = true;
     "gnomeTheme.oledBlack" = true;

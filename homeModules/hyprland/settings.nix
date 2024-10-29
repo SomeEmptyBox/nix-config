@@ -3,81 +3,81 @@
 {
   options.hyprland.settings = lib.mkEnableOption "settings";
   config = lib.mkIf config.hyprland.settings {
-  
-  wayland.windowManager.hyprland.settings = {
 
-    "$browser" = "firefox";
-    "$file" = "yazi";
-    "$menu" = "wofi --show drun";
-    "$monitor" = "btop";
-    "$terminal" = "kitty";
+    wayland.windowManager.hyprland.settings = {
 
-    monitor = ", 1920x1080, 0x0, 1.0";
+      "$browser" = "firefox";
+      "$file" = "yazi";
+      "$menu" = "wofi --show drun";
+      "$monitor" = "btop";
+      "$terminal" = "kitty";
 
-    exec-once = [
-      "clipse -listen"
-      "~/.local/state/nix/profiles/home-manager/home-path/libexec/polkit-gnome-authentication-agent-1"
-      "exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-    ];
+      monitor = ", 1920x1080, 0x0, 1.0";
 
-    env = [
-      "GDK_BACKEND,wayland"
-      "SDL_VIDEODRIVER,wayland"
-      "CLUTTER_BACKEND,wayland"
+      exec-once = [
+        "clipse -listen"
+        "~/.local/state/nix/profiles/home-manager/home-path/libexec/polkit-gnome-authentication-agent-1"
+        "exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+      ];
 
-      "EDITOR,nvim"
+      env = [
+        "GDK_BACKEND,wayland"
+        "SDL_VIDEODRIVER,wayland"
+        "CLUTTER_BACKEND,wayland"
 
-      "QT_QPA_PLATFORM,wayland"
-      #"QT_QPA_PLATFORMTHEME,qt6ct"
-      #"QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+        "EDITOR,nvim"
 
-      "XDG_CURRENT_DESKTOP,Hyprland"
-      "XDG_SESSION_TYPE,wayland"
-      "XDG_SESSION_DESKTOP,Hyprland"
-    ];
+        "QT_QPA_PLATFORM,wayland"
+        #"QT_QPA_PLATFORMTHEME,qt6ct"
+        #"QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
 
-    general = {
-      border_size = 4;
-      gaps_in = 3;
-      gaps_out = 8;
-      layout = "dwindle";
-#      "col.active_border" = "$blue";
-#      "col.inactive_border" = "$crust";
-      resize_on_border = true;
-    };
+        "XDG_CURRENT_DESKTOP,Hyprland"
+        "XDG_SESSION_TYPE,wayland"
+        "XDG_SESSION_DESKTOP,Hyprland"
+      ];
 
-    master = {
-      mfact = 0.5;
-      new_status = "master";
-    };
+      general = {
+        border_size = 4;
+        gaps_in = 3;
+        gaps_out = 8;
+        layout = "dwindle";
+        #      "col.active_border" = "$blue";
+        #      "col.inactive_border" = "$crust";
+        resize_on_border = true;
+      };
 
-    decoration = {
-      rounding = 10;
-      drop_shadow = false;
-      blur = {
-        enabled = false;
-        size = 4;
-        passes = 2;
+      master = {
+        mfact = 0.5;
+        new_status = "master";
+      };
+
+      decoration = {
+        rounding = 10;
+        drop_shadow = false;
+        blur = {
+          enabled = false;
+          size = 4;
+          passes = 2;
+        };
+      };
+
+      input.touchpad = {
+        natural_scroll = true;
+        drag_lock = true;
+        tap-and-drag = true;
+      };
+
+      gestures = {
+        workspace_swipe = true;
+      };
+
+      misc = {
+        disable_hyprland_logo = true;
+        disable_splash_rendering = true;
+        font_family = "JetBrainsMonoNerdFont";
+        vrr = 1;
       };
     };
-
-    input.touchpad = {
-      natural_scroll = true;
-      drag_lock = true;
-      tap-and-drag = true;
-    };
-
-    gestures = {
-      workspace_swipe = true;
-    };
-
-    misc = {
-      disable_hyprland_logo = true;
-      disable_splash_rendering = true;
-      font_family = "JetBrainsMonoNerdFont";
-      vrr = 1;
-    };
-  };
 
   };
 }

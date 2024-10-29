@@ -1,17 +1,26 @@
-{ config, lib, pkgs, user, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  user,
+  ...
+}:
 
 {
   imports = [ ./nixosModules ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   nixpkgs.config.allowUnfree = true;
   zramSwap.enable = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-#  security.polkit = {
-#    enable = true;
-    #package = pkgs.polkit_gnome;
-#  };
+  #  security.polkit = {
+  #    enable = true;
+  #package = pkgs.polkit_gnome;
+  #  };
 
   services = {
     blueman.enable = true;
@@ -48,7 +57,12 @@
   users.users.${user.name} = {
     isNormalUser = true;
     shell = pkgs.fish;
-    extraGroups = [ "NetworkManager" "wheel" "plugdev" "adbusers" ];
+    extraGroups = [
+      "NetworkManager"
+      "wheel"
+      "plugdev"
+      "adbusers"
+    ];
   };
 
   hyprland.enable = true;

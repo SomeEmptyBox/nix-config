@@ -1,4 +1,9 @@
-{ config, lib, user, ... }:
+{
+  config,
+  lib,
+  user,
+  ...
+}:
 
 {
   options.cliPrograms.git = lib.mkEnableOption "git";

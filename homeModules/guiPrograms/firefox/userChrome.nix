@@ -1,16 +1,16 @@
 { inputs, ... }:
 
 {
-  home.file.".mozilla/firefox/peace/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
+  home.file.".mozilla/firefox/default/chrome/firefox-gnome-theme".source = inputs.firefox-gnome-theme;
 
-  programs.firefox.profiles.peace = {
+  programs.firefox.profiles.default = {
 
     userChrome = ''
-    @import "firefox-gnome-theme/userChrome.css"
+      @import "firefox-gnome-theme/userChrome.css"
     '';
 
     userContent = ''
-    @import "firefox-gnome-theme/userContent.css"
+      @import "firefox-gnome-theme/userContent.css"
     '';
 
   };

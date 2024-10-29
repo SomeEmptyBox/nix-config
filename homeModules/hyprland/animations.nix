@@ -9,7 +9,7 @@
       "md3_decel, 0.05, 0.7, 0.1, 1"
       "md3_accel, 0.3, 0, 0.8, 0.15"
       "overshot, 0.05, 0.9, 0.1, 1.1"
-      "crazyshot, 0.1, 1.5, 0.76, 0.92" 
+      "crazyshot, 0.1, 1.5, 0.76, 0.92"
       "hyprnostretch, 0.05, 0.9, 0.1, 1.0"
       "menu_decel, 0.1, 1, 0, 1"
       "menu_accel, 0.38, 0.04, 1, 0.07"
@@ -19,8 +19,8 @@
       "softAcDecel, 0.26, 0.26, 0.15, 1"
       "md2, 0.4, 0, 0.2, 1" # use with .2s duration
     ];
-    
-    animation = [ 
+
+    animation = [
       "windows, 1, 3, md3_decel, popin 60%"
       "windowsIn, 1, 3, md3_decel, popin 60%"
       "windowsOut, 1, 3, md3_accel, popin 60%"

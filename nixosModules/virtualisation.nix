@@ -1,4 +1,10 @@
-{ config, lib, pkgs, user, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  user,
+  ...
+}:
 
 {
   options.virtual.enable = lib.mkEnableOption "enables virtualisation";
@@ -7,10 +13,10 @@
     virtualisation.libvirtd = {
       enable = true;
       qemu = {
-      	package = pkgs.qemu_kvm;
-      	swtpm.enable = true;
-      	ovmf.enable = true;
-      	ovmf.packages = [ pkgs.OVMFFull.fd ];
+        package = pkgs.qemu_kvm;
+        swtpm.enable = true;
+        ovmf.enable = true;
+        ovmf.packages = [ pkgs.OVMFFull.fd ];
       };
     };
 
@@ -26,7 +32,7 @@
       usbutils
       virt-manager
       virt-viewer
-#      virtio-win
+      #      virtio-win
       win-spice
     ];
 

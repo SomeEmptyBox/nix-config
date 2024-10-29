@@ -1,4 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [
@@ -15,9 +21,9 @@
 
     wayland.windowManager.hyprland = {
       enable = true;
-      systemd.variables = ["--all"];
+      systemd.variables = [ "--all" ];
     };
-    
+
     home.packages = with pkgs; [
       brightnessctl
       clipse
@@ -41,7 +47,10 @@
     xdg.portal = {
       enable = true;
       extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-      config.common.default = [ "hyprland" "gtk" ];
+      config.common.default = [
+        "hyprland"
+        "gtk"
+      ];
     };
 
   };

@@ -33,7 +33,7 @@
       # Screenshot
       ", PRINT, exec, hyprshot -m window -o ~/Pictures/Screenshots"
       "$mod, PRINT, exec, hyprshot -m output -o ~/Pictures/Screenshots"
-      "SHIFT, PRINT, exec, hyprshot -m region -o ~/Pictures/Screenshots" 
+      "SHIFT, PRINT, exec, hyprshot -m region -o ~/Pictures/Screenshots"
 
       # Move Focus with $mod + Arrow keys
       "$mod, left, movefocus, l"

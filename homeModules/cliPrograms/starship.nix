@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   options.cliPrograms.starship = lib.mkEnableOption "starship";
@@ -15,7 +20,7 @@
           "$hostname"
           "$character"
         ];
-        
+
         right_format = lib.concatStrings [
           "$directory"
           "$nix_shell"
@@ -34,13 +39,13 @@
           format = "[$user]($style)";
           style_user = "blue";
         };
-        
+
         directory = {
           style = "cyan";
           disabled = true;
           read_only = " ";
         };
-        
+
         time = {
           format = " \\[[$time]($style)\\]";
           time_format = "%I:%M %p";
@@ -61,7 +66,7 @@
           error_symbol = "[❯](red)";
           vimcmd_symbol = "[❮](green)";
         };
-          
+
         git_branch = {
           symbol = " ";
           format = " \\[[$symbol$branch(:$remote_branch)]($style)\\]";
@@ -104,13 +109,13 @@
           style = "yellow";
           format = " \\[[$symbol($version)]($style)\\]";
         };
-        
+
         rust = {
           format = " \\[[$symbol($version)]($style)\\]";
           symbol = "󱘗 ";
           style = "red";
         };
-        
+
         cmd_duration = {
           format = " \\[[⏱ $duration]($style)\\]";
           style = "green";

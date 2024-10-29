@@ -1,4 +1,11 @@
-{ config, lib, pkgs, inputs, user, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  user,
+  ...
+}:
 
 {
   imports = [ ./homeModules ];
@@ -11,9 +18,28 @@
   };
 
   cliPrograms.enable = true;
-  guiPrograms.enable = true;
   hyprland.enable = true;
   modules.enable = true;
+
+  programs = {
+    firefox.enable = true;
+    kitty.enable = true;
+  };
+
+  home.packages = with pkgs; [
+    aria2
+    betterdiscord-installer
+    celluloid
+    chromium
+    cmatrix
+    discord
+    fragments
+    komikku
+    libreoffice-fresh
+    nautilus
+    protonvpn-gui
+    telegram-desktop
+  ];
 
   xdg.userDirs = {
     enable = true;
