@@ -28,7 +28,6 @@
 
   home.packages = with pkgs; [
     aria2
-    betterdiscord-installer
     celluloid
     chromium
     cmatrix
