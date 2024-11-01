@@ -10,7 +10,6 @@
 
   options = {
     cliPrograms.enable = lib.mkEnableOption "cliPrograms";
-    hyprland.enable = lib.mkEnableOption "hyprland";
     modules.enable = lib.mkEnableOption "modules";
   };
 
@@ -22,12 +21,6 @@
       git = lib.mkDefault true;
       nixvim = lib.mkDefault true;
       starship = lib.mkDefault true;
-    };
-
-    hyprland = lib.mkIf config.hyprland.enable {
-      default.enable = lib.mkDefault true;
-      dependencies.mako.enable = true;
-      settings = lib.mkDefault true;
     };
 
     modules = lib.mkIf config.modules.enable {

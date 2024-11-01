@@ -10,7 +10,6 @@
 {
   imports = [
     inputs.stylix.homeManagerModules.stylix
-    inputs.catppuccin.homeManagerModules.catppuccin
   ];
 
   options.modules.stylix = lib.mkEnableOption "stylix";

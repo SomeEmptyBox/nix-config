@@ -1,9 +1,4 @@
-{ config, lib, ... }:
-
 {
-  options.hyprland.settings = lib.mkEnableOption "settings";
-  config = lib.mkIf config.hyprland.settings {
-
     wayland.windowManager.hyprland.settings = {
 
       "$browser" = "firefox";
@@ -41,8 +36,8 @@
         gaps_in = 3;
         gaps_out = 8;
         layout = "dwindle";
-        #      "col.active_border" = "$blue";
-        #      "col.inactive_border" = "$crust";
+        "col.active_border" = "$blue";
+        "col.inactive_border" = "$crust";
         resize_on_border = true;
       };
 
@@ -77,7 +72,6 @@
         font_family = "JetBrainsMonoNerdFont";
         vrr = 1;
       };
-    };
 
-  };
+    };
 }

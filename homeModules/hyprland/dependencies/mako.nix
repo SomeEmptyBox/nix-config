@@ -1,14 +1,4 @@
 {
-  config,
-  lib,
-  pkgs,
-  ...
-}:
-
-{
-  options.hyprland.dependencies.mako.enable = lib.mkEnableOption "mako";
-  config = lib.mkIf config.hyprland.dependencies.mako.enable {
-
     services.mako = {
       enable = true;
       anchor = "top-center";
@@ -18,6 +8,4 @@
       width = 400;
       defaultTimeout = 5000;
     };
-
-  };
 }

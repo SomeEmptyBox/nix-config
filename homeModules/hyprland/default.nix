@@ -1,6 +1,4 @@
 {
-  config,
-  lib,
   pkgs,
   inputs,
   ...
@@ -15,14 +13,6 @@
     ./settings.nix
     ./windowrules.nix
   ];
-
-  options.hyprland.default.enable = lib.mkEnableOption "enables dependencies";
-  config = lib.mkIf config.hyprland.default.enable {
-
-    wayland.windowManager.hyprland = {
-      enable = true;
-      systemd.variables = [ "--all" ];
-    };
 
     home.packages = with pkgs; [
       brightnessctl
@@ -53,5 +43,4 @@
       ];
     };
 
-  };
 }
