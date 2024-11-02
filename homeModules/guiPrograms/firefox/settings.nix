@@ -6,6 +6,7 @@
     # "privacy.clearOnShutdown.cookies" = false;
     # "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
     "privacy.donottrackheader.enabled" = true;
+    "extensions.update.autoUpdateDefault" = false;
 
     # firefox gnome theme
     "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
