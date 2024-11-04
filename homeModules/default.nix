@@ -10,14 +10,13 @@
 
   options = {
     cliPrograms.enable = lib.mkEnableOption "cliPrograms";
+    desktops.enable = lib.mkEnableOption "desktops";
     modules.enable = lib.mkEnableOption "modules";
   };
 
   config = {
 
     cliPrograms = lib.mkIf config.cliPrograms.enable {
-      fastfetch = lib.mkDefault true;
-      fish = lib.mkDefault true;
       git = lib.mkDefault true;
       nixvim = lib.mkDefault true;
       starship = lib.mkDefault true;

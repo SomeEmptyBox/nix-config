@@ -18,17 +18,20 @@
   };
 
   cliPrograms.enable = true;
-  modules = {
-    enable = true;
-    stylix = false;
-  };
 
     wayland.windowManager.hyprland = {
       enable = true;
       systemd.variables = [ "--all" ];
     };
+ 
+  modules = {
+    enable = true;
+    stylix = false;
+  };
 
   programs = {
+    fastfetch.enable = true;
+    fish.enable = true;
     firefox.enable = true;
     kitty.enable = true;
   };
