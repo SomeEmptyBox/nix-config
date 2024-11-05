@@ -16,7 +16,7 @@
     };
 
     services.displayManager.sddm = {
-      enable = true;
+      enable = false;
       wayland.enable = true;
       package = pkgs.kdePackages.sddm;
     };

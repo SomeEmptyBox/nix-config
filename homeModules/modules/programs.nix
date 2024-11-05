@@ -14,7 +14,7 @@
       btop.enable = true;
       imv.enable = true;
       obs-studio.enable = true;
-      yazi.enable = true;
+      # yazi.enable = true;
     };
 
   };
