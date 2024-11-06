@@ -47,7 +47,7 @@
     };
 
     decoration = {
-      rounding = 8;
+      rounding = 6;
       drop_shadow = false;
       blur = {
         enabled = false;
