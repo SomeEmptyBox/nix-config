@@ -27,6 +27,7 @@
     gnome.gnome-keyring.enable = true;
     libinput.enable = true;
     udisks2.enable = true;
+    xserver.enable = false;
 
     pipewire = {
       enable = true;
@@ -63,6 +64,11 @@
       "plugdev"
       "adbusers"
     ];
+  };
+
+  services.xserver = {
+    desktopManager.gnome.enable = true;
+    displayManager.gdm.enable = true;
   };
 
   hyprland.enable = true;
