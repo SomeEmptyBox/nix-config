@@ -18,8 +18,8 @@
     };
 
     services = {
-      desktopManager.cosmic.enable = true;
-      displayManager.cosmic-greeter.enable = true;
+      desktopManager.cosmic.enable = false;
+      displayManager.cosmic-greeter.enable = false;
     };
 
   };
