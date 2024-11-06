@@ -48,7 +48,6 @@
 
     decoration = {
       rounding = 6;
-      drop_shadow = false;
       blur = {
         enabled = false;
         size = 4;

@@ -31,7 +31,7 @@
 
     pipewire = {
       enable = true;
-      pulse.enable = true;
+    #  pulse.enable = true;
     };
   };
 
@@ -68,7 +68,7 @@
 
   services.xserver = {
     desktopManager.gnome.enable = true;
-    displayManager.gdm.enable = true;
+    displayManager.gdm.enable = false;
   };
 
   hyprland.enable = true;
