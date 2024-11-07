@@ -33,7 +33,7 @@
             "config"
           ];
           keyword = "config";
-          url = "https://github.com/SomeEmptyBox/nix-config";
+          url = "https://github.com/SomeEmptyBox/nixcfg";
         }
 
       ];
