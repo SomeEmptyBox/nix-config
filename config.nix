@@ -28,11 +28,7 @@
     libinput.enable = true;
     udisks2.enable = true;
     xserver.enable = false;
-
-    pipewire = {
-      enable = true;
-    #  pulse.enable = true;
-    };
+    pipewire.enable = true;
   };
 
   #boot.plymouth.enable = true;
@@ -78,7 +74,7 @@
 
   programs.nh = {
     enable = true;
-    flake = "/home/${user.name}/nix-config";
+    flake = "/home/${user.name}/nixcfg";
     clean = {
       enable = true;
       dates = "daily";

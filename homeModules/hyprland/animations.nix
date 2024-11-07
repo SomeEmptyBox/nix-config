@@ -30,9 +30,9 @@
       #"fadeLayersIn, 1, 2, menu_decel"
       #"fadeLayersOut, 1, 4.5, menu_accel"
       "workspaces, 1, 7, menu_decel, slide"
-      #"workspaces, 1, 2.5, softAcDecel, slide"
+      "workspaces, 1, 2.5, softAcDecel, slide"
       #"workspaces, 1, 7, menu_decel, slidefade 15%"
-      #"specialWorkspace, 1, 3, md3_decel, slidefadevert 15%"
+      "specialWorkspace, 1, 3, md3_decel, slidefadevert 15%"
       "specialWorkspace, 1, 3, md3_decel, slidevert"
     ];
 

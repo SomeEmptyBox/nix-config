@@ -8,9 +8,7 @@
 }:
 
 {
-  imports = [
-    inputs.stylix.homeManagerModules.stylix
-  ];
+  imports = [ inputs.stylix.homeManagerModules.stylix ];
 
   options.modules.stylix = lib.mkEnableOption "stylix";
   config = lib.mkIf config.modules.stylix {

@@ -50,7 +50,7 @@
         name = "peace";
         host = "nixos";
         system = "x86_64-linux";
-        assets = "~/nix-config/assets";
+        assets = "~/nixcfg/assets";
       };
     in
     {
