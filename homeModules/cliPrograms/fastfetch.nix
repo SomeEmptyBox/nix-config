@@ -16,12 +16,12 @@
       preserveAspectRatio = true;
       source = "${user.assets}/nixos-logo.png";
       type = "kitty";
-      #height = 20;
-      width = 20;
+      height = 9;
+      #width = 20;
     };
 
     modules = [
-      "break"
+      #"break"
       "break"
 
       {

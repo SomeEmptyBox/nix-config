@@ -19,11 +19,11 @@
 
   cliPrograms.enable = true;
 
-    wayland.windowManager.hyprland = {
-      enable = true;
-      systemd.variables = [ "--all" ];
-    };
- 
+  wayland.windowManager.hyprland = {
+    enable = true;
+    systemd.variables = [ "--all" ];
+  };
+
   modules = {
     enable = true;
     stylix = false;
@@ -31,7 +31,10 @@
 
   programs = {
     fastfetch.enable = true;
-    fish.enable = true;
+    fish = {
+      enable = true;
+      interactiveShellInit = "fastfetch";
+    };
     firefox.enable = true;
     kitty.enable = true;
   };

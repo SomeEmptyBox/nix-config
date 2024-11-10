@@ -1,5 +1,7 @@
 {
   programs.firefox.profiles.default.settings = {
+    "accessibility.typeaheadfind" = true;
+    "dom.security.https_only_mode" = true;
     "extensions.autoDisableScopes" = 0;
     "browser.toolbars.bookmarks.visibility" = "newtab";
     # "privacy.resistFingerprinting" = false;
