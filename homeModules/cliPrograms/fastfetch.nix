@@ -18,6 +18,7 @@
       type = "kitty";
       height = 9;
       #width = 20;
+      padding.left = 1;
     };
 
     modules = [
