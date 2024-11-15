@@ -53,6 +53,7 @@
     materialgram
     protonvpn-gui
     telegram-desktop
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
   xdg.userDirs = {
