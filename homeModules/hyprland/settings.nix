@@ -47,12 +47,9 @@
     };
 
     decoration = {
-      rounding = 8;
-      blur = {
-        enabled = false;
-        size = 4;
-        passes = 2;
-      };
+      rounding = 7;
+      blur.enabled = false;
+      shadow.enabled = false;
     };
 
     input.touchpad = {
