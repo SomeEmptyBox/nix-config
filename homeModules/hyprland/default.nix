@@ -19,7 +19,9 @@
   home.packages = with pkgs; [
     brightnessctl
     clipse
+    hyprpicker
     hyprshot
+    hyprsunset
     playerctl
     polkit_gnome
     wl-clipboard
